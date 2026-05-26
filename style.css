@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+body{
+    background-color: #202020;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E5E5E5;
+}
+
+img{
+    width: 75%;
+    height: 75%;
+}
+
+#card-juego{
+    background-color: #202020;
+    width: 70%;
+    padding: 2rem;
+    border: 4px solid #E5E5E5;;
+    border-radius: 40px;
+}
+
+.contenedor-principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+    gap: 2rem;
+}
+
+/* ----------------- PALABRA ----------------- */
+h2{
+    border-bottom: 1px solid #E5E5E5;;
+    text-align: center;
+    padding-bottom: 1rem;        
+}
+
+#teclado{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 0.5rem;    
+}
+
+#palabra{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.letra {
+    text-align: center;
+    margin: 0 0.5rem;
+    height: 3rem;
+    width: 3rem;
+    border: none;
+    border-bottom: 3px solid #E5E5E5;
+    border-radius: 0;
+    background-color: transparent;
+    outline: none;
+    cursor: default;
+    color: #E5E5E5;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.tecla {
+    width: 3rem;
+    height: 3.5rem;
+    background-color: transparent;
+    border: 2px solid #E5E5E5;
+    color: #E5E5E5;
+    border-radius: 8px;
+    padding: 0.5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.tecla:hover {
+    background-color: #E5E5E5;
+    color: #202020;
+}
+
+.pintar{
+    background-color: rgb(119, 218, 119);
+}
+
+.pintar-error{
+    background-color: rgb(218, 119, 119)
+}
+
+/* ----------------- DATOS ----------------- */
+
+h3{
+    margin: 1rem;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+h3 span{
+    font-weight: 600;
+}
+
+button{
+    display: block;
+    width: fit-content;
+    margin: auto;
+    background-color: rgb(238, 162, 49);
+    color: #191919;
+    border: 2px solid #191919;
+    border-radius: 40px;
+    font-weight: bold;
+    padding: 1rem;
+    cursor: pointer;
+}
