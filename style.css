@@ -19,10 +19,10 @@ img{
 }
 
 #card-juego{
-    background-color: #202020;
+    background-color: transparent;
     width: 70%;
     padding: 2rem;
-    border: 4px solid #E5E5E5;;
+    border: none;
     border-radius: 40px;
 }
 
@@ -51,6 +51,7 @@ h2{
     display: flex;
     justify-content: center;
     margin: 2rem;
+    flex-wrap: wrap;
 }
 
 .letra {
@@ -125,4 +126,73 @@ button:hover{
     background-color: #202020;
     color: #E5E5E5;
     border: 2px solid #E5E5E5;;
+}
+
+/* ================= Responsive ================= */
+/* ----------------- Tablets & Celurares ----------------- */
+
+@media (max-width: 768px) {
+    #card-juego {
+        width: 95%;
+        padding: 1.5rem;
+        border-radius: 20px;
+    }
+
+    .contenedor-principal {
+        flex-direction: column; 
+        gap: 1.5rem;
+    }
+
+    img {
+        width: 50%;
+        max-width: 200px;
+    }
+
+    .letra {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.5rem;
+        margin: 0.2rem;
+    }
+
+    #teclado {
+        grid-template-columns: repeat(7, 1fr);
+        gap: 0.4rem;
+        width: 100%;
+    }
+
+    .tecla {
+        width: 100%; 
+        height: 3rem;
+        font-size: 1.1rem;
+        padding: 0;
+    }
+}
+
+/* ----------------- Celulares más pequeños ----------------- */
+@media (max-width: 480px) {
+    #card-juego {
+        padding: 1rem;
+    }
+
+    .letra {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.2rem;
+        border-bottom-width: 2px;
+    }
+
+    #teclado {
+        grid-template-columns: repeat(6, 1fr); 
+        gap: 0.3rem;
+    }
+
+    .tecla {
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+    
+    h3 {
+        font-size: 0.9rem;
+    }
 }
