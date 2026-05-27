@@ -35,7 +35,8 @@ img{
 }
 
 /* ----------------- Interfaz del juego ----------------- */
-h2{
+h1{
+    font-size: 1.4rem;
     border-bottom: 1px solid #E5E5E5;;
     text-align: center;
     padding-bottom: 1rem;        
@@ -126,6 +127,18 @@ button:hover{
     background-color: #202020;
     color: #E5E5E5;
     border: 2px solid #E5E5E5;;
+}
+
+/* ----------------- Ocultar elemento, pero accesible para el lector de pantalla ----------------- */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 
 /* ================= Responsive ================= */
