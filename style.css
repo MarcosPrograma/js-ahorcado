@@ -34,7 +34,7 @@ img{
     gap: 2rem;
 }
 
-/* ----------------- PALABRA ----------------- */
+/* ----------------- Interfaz del juego ----------------- */
 h2{
     border-bottom: 1px solid #E5E5E5;;
     text-align: center;
@@ -96,27 +96,33 @@ h2{
     background-color: rgb(218, 119, 119)
 }
 
-/* ----------------- DATOS ----------------- */
+/* ----------------- Interfaz para los datos ----------------- */
 
 h3{
     margin: 1rem;
-    font-weight: normal;
+    font-weight: 600;
     font-size: 1rem;
 }
 
 h3 span{
-    font-weight: 600;
+    font-weight: normal;
 }
 
 button{
     display: block;
     width: fit-content;
     margin: auto;
-    background-color: rgb(238, 162, 49);
-    color: #191919;
-    border: 2px solid #191919;
+    background-color: #E5E5E5;
+    color: #202020;
+    border: none;
     border-radius: 40px;
     font-weight: bold;
     padding: 1rem;
     cursor: pointer;
+}
+
+button:hover{
+    background-color: #202020;
+    color: #E5E5E5;
+    border: 2px solid #E5E5E5;;
 }
