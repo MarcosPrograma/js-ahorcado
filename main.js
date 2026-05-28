@@ -101,7 +101,8 @@ function generarTeclado() {
         boton.addEventListener("click", () => {
             if (!juegoTerminado) {
                 procesarLetra(letra);
-                boton.disabled = true; //deshabilitamos la letra 
+                boton.disabled = true; //deshabilitamos la letra
+                boton.className = "tecla-deshabilitada"; 
             }
         });
 
@@ -137,6 +138,7 @@ function procesarLetra(letra) {
                 cajitasPalabraActual[i].className = "letra pintar";
             }
             mensajeAnuncio += ` ¡Ganaste el juego! La palabra completa era ${palabraActual.join('')}.`;
+            alert("¡Ganaste el juego!");
         }
     }
     else {
@@ -155,6 +157,7 @@ function procesarLetra(letra) {
                 cajitasPalabraActual[i].className = "letra pintar-error";
             }
             mensajeAnuncio += ` Juego terminado. Perdiste. La palabra correcta era ${palabraActual.join('')}.`;
+            alert("Juego terminado. Perdiste.");
         }
     }
     //enviar el resultado del turno al lector de pantalla
@@ -171,6 +174,7 @@ document.addEventListener('keydown', event => {
         let botonVirtual = document.getElementById("btn-" + letra);
         if (botonVirtual && !botonVirtual.disabled) {
             botonVirtual.disabled = true;
+            botonVirtual.className = "tecla-deshabilitada";
             procesarLetra(letra);
         }
     }

@@ -90,6 +90,26 @@ h1{
     color: #202020;
 }
 
+.tecla-deshabilitada{
+    width: 3rem;
+    height: 3.5rem;
+    background-color: transparent;
+    border: 2px solid #494949;
+    color: #494949;
+    border-radius: 8px;
+    padding: 0.5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: default;
+    text-align: center;
+}
+
+.tecla-deshabilitada:hover {
+    border: 2px solid #494949;
+    color: #494949;
+    pointer-events: none;
+}
+
 .pintar{
     background-color: rgb(119, 218, 119);
 }
