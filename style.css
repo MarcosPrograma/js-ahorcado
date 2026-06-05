@@ -111,11 +111,15 @@ h1{
 }
 
 .pintar{
-    background-color: rgb(119, 218, 119);
+    background-color: transparent;
+    color: rgb(119, 218, 119);
+    border-bottom-color: rgb(119, 218, 119);
 }
 
 .pintar-error{
-    background-color: rgb(218, 119, 119)
+    background-color: transparent;
+    color: rgb(218, 119, 119);
+    border-bottom-color: rgb(218, 119, 119);
 }
 
 /* ----------------- Interfaz para los datos ----------------- */
